@@ -1,0 +1,86 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+/* loader css */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #219ebc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.select-main > option {
+  background: var(--select-bg);
+  color: white;
+}
+.main-menu {
+  padding: 0;
+  list-style: none;
+  padding: 5px 0px;
+}
+.main-menu li {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.5;
+  color: #2e3748;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.api-scroll {
+  min-height: 550px;
+  max-height: 550px;
+  height: 550px;
+  overflow-y: scroll;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  scrollbar-gutter: stable;
+  max-height: 20px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(74, 75, 77, 0.1);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #1a202c;
+}
+.custom-scrollbar::-webkit-scrollbar:horizontal {
+  max-height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 10px;
+  background-color: #1a202c;
+  width: auto;
+}
+.dev-box {
+  padding: 40px 6px 10px 20px;
+}
+.bold-text {
+  font-weight: 700 !important;
+}
